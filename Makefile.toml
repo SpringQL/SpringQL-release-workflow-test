@@ -122,7 +122,7 @@ done
 script = [
   '''
 #!/usr/bin/env bash -eux
-cargo workspaces publish
+cargo workspaces publish --no-git-commit --no-git-push --no-git-tag --no-global-tag --no-individual-tags
 ''',
 ]
 

@@ -120,14 +120,7 @@ jobs:
           source .github/workflows/scripts/github-branch-protection.bash
           enforce_admins_on
 
-      - name: cargo publish
+      - name: cargo make publish
         run: |
-          # load helper script
-          source .github/workflows/scripts/crates.io-script.bash
-
           cargo login "${{ secrets.CRATES_IO_TOKEN }}"
-
-          cargo publish -p springql-core-release-test
-          wait_published "springql-core-release-test" "${RELEASE_VERSION}" 2> /dev/null
-          cargo publish -p springql-release-test
-          wait_published "springql-release-test" "${RELEASE_VERSION}" 2> /dev/null
+          cargo make publish
