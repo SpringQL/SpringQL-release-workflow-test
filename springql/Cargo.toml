@@ -1,6 +1,6 @@
 [package]
 name = "springql-release-test"
-version = "1.0.0-a2"
+version = "1.0.0-a3"
 
 authors = ["Sho Nakatani <lay.sakura@gmail.com>"]
 license = "MIT OR Apache-2.0"
@@ -15,7 +15,7 @@ readme = "../README.md"
 repository = "https://github.com/SpringQL/SpringQL"
 
 [dependencies]
-springql-core-release-test =  { version = "1.0.0-a2", path="../springql-core"}
+springql-core-release-test =  { version = "1.0.0-a3", path="../springql-core"}
 
 [dev-dependencies]
 springql-foreign-service = {path = "../foreign-service"}
