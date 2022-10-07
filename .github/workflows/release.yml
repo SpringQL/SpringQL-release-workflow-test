@@ -123,4 +123,4 @@ jobs:
       - name: cargo make publish
         run: |
           cargo login "${{ secrets.CRATES_IO_TOKEN }}"
-          cargo workspaces publish --no-git-commit --no-git-push --no-git-tag --no-global-tag --no-individual-tags
+          cargo workspaces publish --no-git-commit
