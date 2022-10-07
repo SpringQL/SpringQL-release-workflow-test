@@ -10,6 +10,8 @@ All other sections are for end-users.
 <!-- markdownlint-disable MD024 -->
 ## [Unreleased]
 
+## [v1.0.0-a6] - 2022-10-07
+
 ## [v1.0.0-a5] - 2022-10-07
 
 ## [v1.0.0-a4] - 2022-10-07
