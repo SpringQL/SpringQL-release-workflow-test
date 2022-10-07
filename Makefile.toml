@@ -118,14 +118,6 @@ done
 ''',
 ]
 
-[tasks.publish]
-script = [
-  '''
-#!/usr/bin/env bash -eux
-cargo workspaces publish --no-git-commit --no-git-push --no-git-tag --no-global-tag --no-individual-tags
-''',
-]
-
 [tasks.actionlint]
 description="lint github actions with actionlint"
 script = [
